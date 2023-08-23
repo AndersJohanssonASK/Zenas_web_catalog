@@ -1,6 +1,6 @@
 #For Python code
 import streamlit 
-import snowflake 
+import snowflake.connector
 
 streamlit.title('TITLE')
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
